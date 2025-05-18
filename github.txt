@@ -22,9 +22,9 @@ git add .
 git commit -m "Primer commit del projecte"
 
 # Afegim la URL del repositori remot
-git remote add origin https://github.com/darthgart/IAB_M03_EAC6_SanchezG
+git remote add origin git@github.com:darthgart/IAB_M03_EAC6_SanchezG.git
 
-# Enviem els canvis a la branca principal (main o master)
+# Enviem els canvis a la branca principal (main)
 git push -u origin main
 
 
@@ -40,5 +40,7 @@ URL del projecte al Github:
 
 https://github.com/darthgart/IAB_M03_EAC6_SanchezG
 
+Captura del projecte pujat a Github:
 
+→ (D:\Study\IOC\M03\DOCKERIA\volum\IAB-M03-EAC6-2425S2-enunciat\IAB_M03_EAC6_SanchezG\GithubCaptura.PNG)
 
