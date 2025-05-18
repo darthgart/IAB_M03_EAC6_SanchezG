@@ -10,12 +10,12 @@ IAB_M03_EAC6_SanchezG/
 │ └── main.py # Script principal
 ├── tests/
 │ └── test_main.py # Testos del projecte
-├── doc/ # Documentació generada (p. ex. amb pdoc)
+├── doc/ # Documentació generada
 ├── captures/ # Imatges generades pel projecte
 ├── requirements.txt # Dependències del projecte
 ├── LICENSE # Llicència del projecte
-├── README.md # Aquest fitxer
-└── llegir.txt # Informació addicional (si cal)
+└── README.md # Aquest fitxer
+
 ```
 ---
 
