@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module main</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">main</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:d%3A%5Cstudy%5Cioc%5Cm03%5Cdockeria%5Cvolum%5Ciab-m03-eac6-2425s2-enunciat%5Cenu%5Cmain.py">d:\study\ioc\m03\dockeria\volum\iab-m03-eac6-2425s2-enunciat\enu\main.py</a></td></tr></table>
+    <p><span class="code">Script&nbsp;principal&nbsp;per&nbsp;crear&nbsp;un&nbsp;dataset&nbsp;sintètic,&nbsp;aplicar&nbsp;clustering&nbsp;KMeans&nbsp;i&nbsp;visualitzar-ne&nbsp;els&nbsp;resultats.<br>
+&nbsp;<br>
+Aquest&nbsp;script:<br>
+-&nbsp;Crea&nbsp;un&nbsp;dataset&nbsp;amb&nbsp;un&nbsp;nombre&nbsp;configurable&nbsp;d'atributs.<br>
+-&nbsp;Aplica&nbsp;clustering&nbsp;KMeans&nbsp;per&nbsp;detectar&nbsp;grups.<br>
+-&nbsp;Visualitza&nbsp;les&nbsp;dades&nbsp;i&nbsp;els&nbsp;clusters&nbsp;en&nbsp;2D&nbsp;i&nbsp;3D,&nbsp;inclòs&nbsp;un&nbsp;gràfic&nbsp;HTML&nbsp;interactiu.<br>
+-&nbsp;Aplica&nbsp;una&nbsp;reducció&nbsp;dimensional&nbsp;amb&nbsp;PCA&nbsp;i&nbsp;revalida&nbsp;el&nbsp;clustering.<br>
+-&nbsp;Comprova&nbsp;la&nbsp;qualitat&nbsp;del&nbsp;clustering&nbsp;amb&nbsp;mètriques&nbsp;d'homogeneïtat&nbsp;i&nbsp;completesa.<br>
+-&nbsp;Utilitza&nbsp;el&nbsp;mètode&nbsp;del&nbsp;colze&nbsp;(Elbow&nbsp;Method)&nbsp;per&nbsp;ajudar&nbsp;a&nbsp;determinar&nbsp;el&nbsp;nombre&nbsp;òptim&nbsp;de&nbsp;clusters.</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="numpy.html">numpy</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-calcular_scores"><strong>calcular_scores</strong></a>(y_true, y_pred)</dt><dd><span class="code">Calcula&nbsp;les&nbsp;puntuacions&nbsp;d'homogeneïtat&nbsp;i&nbsp;completesa&nbsp;entre&nbsp;etiquetes&nbsp;reals&nbsp;i&nbsp;predetes.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;y_true&nbsp;(array-like):&nbsp;Etiquetes&nbsp;reals.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;y_pred&nbsp;(array-like):&nbsp;Etiquetes&nbsp;predetes&nbsp;pel&nbsp;model.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;tuple:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;homogeneïtat&nbsp;(float):&nbsp;Mesura&nbsp;d'homogeneïtat&nbsp;del&nbsp;clustering.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;completesa&nbsp;(float):&nbsp;Mesura&nbsp;de&nbsp;completesa&nbsp;del&nbsp;clustering.</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>X</strong> = array([[ -8.46049812,  -0.08325404,   6.48953894...2.42957376,   7.91197707]],
+      shape=(750, 4))<br>
+<strong>X_PCA</strong> = array([[ -9.0891268 ,  -0.16067839],
+       [  3...   [  8.16617089,   4.54842217]], shape=(750, 2))<br>
+<strong>clust</strong> = 2<br>
+<strong>compl_orig</strong> = np.float64(1.0)<br>
+<strong>compl_pca</strong> = np.float64(1.0)<br>
+<strong>dades_clust</strong> = array([[-10.02417423,  -7.97982859,   2.89372428...5449,  -7.96585471,   3.09936924,   4.57226806]])<br>
+<strong>homo_orig</strong> = np.float64(1.0)<br>
+<strong>homo_pca</strong> = np.float64(1.0)<br>
+<strong>km</strong> = KMeans(init='random', n_clusters=3, n_init=10, random_state=0)<br>
+<strong>km_PCA</strong> = KMeans(init='random', n_clusters=3, n_init=10, random_state=0)<br>
+<strong>num_atributs</strong> = 4<br>
+<strong>y</strong> = array([2, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 2, 0,...0, 1, 1, 2, 0, 1, 2, 0, 1, 0, 0, 2,
+       2, 0])<br>
+<strong>y_km</strong> = array([0, 2, 1, 2, 1, 2, 1, 1, 2, 2, 2, 1, 0, 1,..., 2, 0, 1, 2, 1, 1, 0,
+       0, 1], dtype=int32)<br>
+<strong>y_km_PCA</strong> = array([0, 2, 1, 2, 1, 2, 1, 1, 2, 2, 2, 1, 0, 1,..., 2, 0, 1, 2, 1, 1, 0,
+       0, 1], dtype=int32)</td></tr></table>
+</body></html>

@@ -1,0 +1,28 @@
+# Fitxers Python compilats
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entorn virtual
+venv/
+env/
+.venv/
+
+# Fitxers de configuració d’IDE
+.vscode/
+.idea/
+
+# Fitxers de sistema
+.DS_Store
+Thumbs.db
+
+# Fitxers de logs i temporals
+*.log
+*.tmp
+
+# Carpetes generades com captures d'imatges o documents temporals
+captures/
+docs/_build/
+
+# Fitxers de test que es generin temporalment
+tests/__pycache__/

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module functions</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">functions</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:d%3A%5Cstudy%5Cioc%5Cm03%5Cdockeria%5Cvolum%5Ciab-m03-eac6-2425s2-enunciat%5Cenu%5Cfunctions.py">d:\study\ioc\m03\dockeria\volum\iab-m03-eac6-2425s2-enunciat\enu\functions.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="plotly.graph_objs.html">plotly.graph_objs</a><br>
+<a href="sklearn.metrics.html">sklearn.metrics</a><br>
+</td><td class="multicolumn"><a href="os.html">os</a><br>
+<a href="plotly.html">plotly</a><br>
+</td><td class="multicolumn"><a href="matplotlib.pyplot.html">matplotlib.pyplot</a><br>
+</td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-create_dataset"><strong>create_dataset</strong></a>(number_features)</dt><dd><span class="code">#&nbsp;P2.&nbsp;Create&nbsp;dataset&nbsp;(modificant&nbsp;la&nbsp;funcio)</span></dd></dl>
+ <dl><dt><a name="-img_dir_exists"><strong>img_dir_exists</strong></a>()</dt><dd><span class="code">#&nbsp;Funció&nbsp;per&nbsp;assegurar-nos&nbsp;que&nbsp;la&nbsp;carpeta&nbsp;img&nbsp;existeix</span></dd></dl>
+ <dl><dt><a name="-model_kmeans"><strong>model_kmeans</strong></a>(num_clusters)</dt><dd><span class="code">#&nbsp;Creem&nbsp;el&nbsp;model&nbsp;Kmeans</span></dd></dl>
+ <dl><dt><a name="-plot_clusters"><strong>plot_clusters</strong></a>(km, X, y_km, show=True, nom_alumne='Edgar Sanchez', pca=True)</dt><dd><span class="code">#&nbsp;P4.&nbsp;Plot&nbsp;clusters&nbsp;en&nbsp;2D&nbsp;-&nbsp;mostrem&nbsp;3&nbsp;gràfiques:<br>
+#&nbsp;-&nbsp;attr1&nbsp;vs&nbsp;attr2<br>
+#&nbsp;-&nbsp;attr1&nbsp;vs&nbsp;attr3<br>
+#&nbsp;-&nbsp;attr1&nbsp;vs&nbsp;attr4</span></dd></dl>
+ <dl><dt><a name="-plot_clusters3D"><strong>plot_clusters3D</strong></a>(km, X, y_km, show=True, nom_alumne='Edgar Sanchez')</dt><dd><span class="code">#&nbsp;P5.&nbsp;Plot&nbsp;clusters&nbsp;en&nbsp;3D&nbsp;(amb&nbsp;matplotlib)&nbsp;-&nbsp;mostrem&nbsp;els&nbsp;clusters:<br>
+#&nbsp;-&nbsp;Cluster&nbsp;1&nbsp;(index&nbsp;0)<br>
+#&nbsp;-&nbsp;Cluster&nbsp;2&nbsp;(index&nbsp;1)<br>
+#&nbsp;-&nbsp;Cluster&nbsp;3&nbsp;(index&nbsp;2)<br>
+#&nbsp;-&nbsp;Mostrem&nbsp;centroides&nbsp;dels&nbsp;clusters</span></dd></dl>
+ <dl><dt><a name="-plot_clusters3D_HTML"><strong>plot_clusters3D_HTML</strong></a>(X, y_km, nom_alumne='Edgar Sanchez', show=True)</dt><dd><span class="code">#&nbsp;P6.&nbsp;Plot&nbsp;clusters&nbsp;en&nbsp;3D&nbsp;(HTML&nbsp;amb&nbsp;Plotly)&nbsp;-&nbsp;&nbsp;mostrem&nbsp;els&nbsp;clusters:<br>
+#&nbsp;-&nbsp;Cluster&nbsp;1&nbsp;(index&nbsp;0)<br>
+#&nbsp;-&nbsp;Cluster&nbsp;2&nbsp;(index&nbsp;1)<br>
+#&nbsp;-&nbsp;Cluster&nbsp;3&nbsp;(index&nbsp;2)</span></dd></dl>
+ <dl><dt><a name="-plot_clusters_PCA"><strong>plot_clusters_PCA</strong></a>(km, X, y_km, show, nom_alumne='Edgar Sanchez', pca=False)</dt><dd><span class="code">#&nbsp;P8&nbsp;-&nbsp;Creació&nbsp;i&nbsp;implementació&nbsp;de&nbsp;plot_clusters_PCA&nbsp;(mostra&nbsp;els&nbsp;grafics&nbsp;afegint&nbsp;dos&nbsp;arguments&nbsp;nous)</span></dd></dl>
+ <dl><dt><a name="-plot_data_attributes"><strong>plot_data_attributes</strong></a>(X, show=True, nom_alumne='Edgar Sanchez')</dt><dd><span class="code">#&nbsp;P3.&nbsp;&nbsp;Plot&nbsp;2D&nbsp;data&nbsp;attributes&nbsp;-&nbsp;mostrem&nbsp;4&nbsp;gràfiques:&nbsp;<br>
+#&nbsp;-&nbsp;attr1&nbsp;vs&nbsp;attr2<br>
+#&nbsp;-&nbsp;attr1&nbsp;vs&nbsp;attr3<br>
+#&nbsp;-&nbsp;attr1&nbsp;vs&nbsp;attr4<br>
+#&nbsp;-&nbsp;attr2&nbsp;vs&nbsp;attr3</span></dd></dl>
+ <dl><dt><a name="-plot_elbow"><strong>plot_elbow</strong></a>(X_PCA, show=True, nom_alumne='Edgar Sanchez')</dt><dd><span class="code">#&nbsp;P7.&nbsp;Implementem&nbsp;el&nbsp;plot&nbsp;Elbow&nbsp;Method</span></dd></dl>
+ <dl><dt><a name="-predict_clusters"><strong>predict_clusters</strong></a>(model, X)</dt><dd><span class="code">#&nbsp;Predim&nbsp;els&nbsp;clusters</span></dd></dl>
+ <dl><dt><a name="-transform_PCA"><strong>transform_PCA</strong></a>(X, num_components)</dt><dd><span class="code">#&nbsp;Transformem&nbsp;usant&nbsp;PCA</span></dd></dl>
+</td></tr></table>
+</body></html>

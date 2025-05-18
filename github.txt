@@ -1,0 +1,44 @@
+URL del projecte a Github:
+https://github.com/usuari/nom-del-projecte
+
+Flux de treball per exportar el projecte a Github:
+
+1. Crear un repositori remot a Github des de la web (github.com).
+2. Inicialitzar el repositori local (si encara no està inicialitzat).
+3. Afegir els fitxers al control de versions amb git.
+4. Fer commit dels canvis locals.
+5. Enllaçar el repositori remot amb el local.
+6. Fer push dels commits locals al repositori remot.
+
+Comandes git per fer el push del projecte a Github:
+
+# Inicialitza git (només si no està inicialitzat)
+git init
+
+# Afegim tots els fitxers i canvis al staging
+git add .
+
+# Fem un commit amb un missatge descriptiu
+git commit -m "Primer commit del projecte"
+
+# Afegim la URL del repositori remot
+git remote add origin https://github.com/usuari/nom-del-projecte.git
+
+# Enviem els canvis a la branca principal (main o master)
+git push -u origin main
+
+
+Explicació breu de cada comanda:
+
+- git init: crea un repositori git local en el directori actual.
+- git add .: afegeix tots els fitxers actuals i canvis al staging per preparar-los per al commit.
+- git commit -m "missatge": guarda un snapshot dels canvis amb un missatge descriptiu.
+- git remote add origin <url>: estableix l’enllaç amb el repositori remot a Github.
+- git push -u origin main: puja els commits locals a la branca principal del repositori remot i estableix 'origin main' com a branca per defecte per futures pujades.
+
+URL del projecte al Github:
+
+https://github.com/usuari/nom-del-projecte
+
+
+
