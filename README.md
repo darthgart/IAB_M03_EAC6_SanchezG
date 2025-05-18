@@ -3,7 +3,7 @@
 Aquest projecte realitza una anàlisi de clustering sobre un conjunt de dades generat artificialment, aplicant tècniques com KMeans i reducció de dimensionalitat amb PCA.
 
 ## 📁 Estructura del projecte
-
+```bash
 IAB_M03_EAC6_SanchezG/
 ├── src/
 │ ├── functions.py # Funcions del projecte
@@ -16,7 +16,7 @@ IAB_M03_EAC6_SanchezG/
 ├── LICENSE # Llicència del projecte
 ├── README.md # Aquest fitxer
 └── llegir.txt # Informació addicional (si cal)
-
+```
 ---
 
 ## ⚙️ Instal·lació del projecte
