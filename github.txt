@@ -1,5 +1,5 @@
 URL del projecte a Github:
-https://github.com/usuari/nom-del-projecte
+https://github.com/darthgart/IAB_M03_EAC6_SanchezG
 
 Flux de treball per exportar el projecte a Github:
 
@@ -22,7 +22,7 @@ git add .
 git commit -m "Primer commit del projecte"
 
 # Afegim la URL del repositori remot
-git remote add origin https://github.com/usuari/nom-del-projecte.git
+git remote add origin https://github.com/darthgart/IAB_M03_EAC6_SanchezG
 
 # Enviem els canvis a la branca principal (main o master)
 git push -u origin main
@@ -38,7 +38,7 @@ Explicació breu de cada comanda:
 
 URL del projecte al Github:
 
-https://github.com/usuari/nom-del-projecte
+https://github.com/darthgart/IAB_M03_EAC6_SanchezG
 
 
 
