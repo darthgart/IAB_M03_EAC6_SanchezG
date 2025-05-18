@@ -1,4 +1,4 @@
-# Projecte de Clustering amb KMeans i PCA
+# IAB M03 - EAC6 Projecte de Clustering amb KMeans i PCA
 
 Aquest projecte realitza una anàlisi de clustering sobre un conjunt de dades generat artificialment, aplicant tècniques com KMeans i reducció de dimensionalitat amb PCA.
 
