@@ -25,14 +25,15 @@ IAB_M03_EAC6_SanchezG/
 
 ```bash
 git clone https://github.com/usuari/projecte.git
-cd projecte
+cd IAB_M03_EAC6_SanchezG
+code .
 ```
 
 2. Crea un entorn virtual:
 
 ```bash
 python -m venv env
-source env/bin/activate
+,./env/bin/activate
 ```
 
 3. Instal·la les dependències:
@@ -56,7 +57,13 @@ Això generarà les gràfiques dels clústers i les gurardarà automàticament a
 Per comprvar la qualitat del codi amb pylint:
 
 ```bash
-pylint src/
+pylint src/main.py
+```
+
+o
+
+```bash
+python -m pylint src/main.py
 ```
 
 ## 🧾 Generació de la documentació
@@ -64,7 +71,7 @@ pylint src/
 La documentació de les funcions es pot generar amb pdoc:
 
 ```bash
-pdoc src/functions.py --html --output-dir doc/
+pdoc src/main.py --html --output-dir doc/
 ```
 
 ## 🧪 Comprovació dels tests
